@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Kenia;
+    src: url(../font/Kenia-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#hero {
+    background-image: url("../img/miketyson.webp");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: kenia;
+    color: red;
+    margin-top: 0px; /* Ajusta este valor según tus necesidades */
+}
+
+p {
+    font-size: 1.2em;
+    
+    margin-top: 0px; /* Ajusta este valor según tus necesidades */
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
