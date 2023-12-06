@@ -33,7 +33,7 @@ html {
 
 body {margin:0;padding:0;   /* para desactivar el espacio de 
                                separación por defecto */
-      background-color: #ccc;
+      
       font-family: textonormal;}
 
 #wrapper {background-color:#f2f1f1;
@@ -119,7 +119,7 @@ nav{
 /***************************   HERO SECTION *********************************/
 
 #hero {
-      background-image: url(/img/miketyson.webp);
+      background-image: url("../img/miketyson.webp");
       height:95vh;    /* el 100% del alto de la ventana del navegador */ 
                          background-size: cover;
                          background-position:center;
@@ -154,7 +154,10 @@ nav{
 
 .title{
       font-family: blackmirror;
-      padding-top: 6vh;
+      text-align: center;
+      background-color: rgb(54, 54, 54);
+      color: red;
+      padding: 6vh 0;
 }
 
 .grid-2{
