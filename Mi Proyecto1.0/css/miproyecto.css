@@ -1,0 +1,136 @@
+/* Definición de fuentes */
+@font-face {
+    font-family: Kenia;
+    src: url(../font/Kenia-Regular.ttf);
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del área de héroe */
+#hero {
+    background-image: url("../img/miketyson.webp");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Asegura que no haya márgenes en el body */
+    overflow: hidden; /* Evita cualquier desbordamiento horizontal */
+}
+
+#titulo_hero {
+    background-color: grey;
+    margin-left: 0%;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.hero-content {
+    width: 100vw; /* Ancho al 100% del ancho de la ventana */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    
+}
+
+/* Estilo del contenido del héroe */
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 7em;
+    font-family: kenia;
+    color: black;
+    margin-top: 0; /* Simplificado: Eliminado "px" */
+}
+
+/* Estilo del párrafo */
+p {
+    font-size: 1.2em;
+    margin-top: 0; /* Simplificado: Eliminado "px" */
+}
+
+/* Estilo del botón al pasar el ratón */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del menú desplegable */
+#sidebar {
+    background-color: #333;
+    padding: 15px;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: -200px; /* Oculta el menú al inicio */
+    top: 0;
+    transition: left 0.3s; /* Agrega transición para una animación suave */
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin-bottom: 10px;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+#sidebar ul li a:hover {
+    color: #007bff;
+}
+
+/* Nuevo estilo para el menú activo */
+#sidebar.active {
+    left: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
