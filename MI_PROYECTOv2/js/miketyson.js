@@ -14,4 +14,12 @@ function toggleNavbar() {
       moreText.style.display = "none";
     }
   }
+  function showWhatsAppNumber() {
+    alert('+34 934827237');
+}
+
+function showGitHubUsername() {
+    alert('ManuFes');
+}
+
   
