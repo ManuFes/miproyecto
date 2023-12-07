@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/miketyson.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <script src="./js/miketyson.js"></script>
 
 </head>
 <body>
@@ -24,7 +25,6 @@
             <a href="#gallery">Legacy</a>
             <a href="#Nowdays">Nowdays</a>
             
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
               <i class="fa fa-bars"></i>
             </a>
@@ -42,16 +42,18 @@
     <section id="intro">
         
         <!-- aqui podría poner un título o lo que fuera independientemente de las columnas-->
-        <h1 class="title">Introducción</h1>
+        <h1 class="title">INTRODUCCION</h1>
         <div class="grid-2"> <!-- Contenedor del grid de 2-->
             <div class="col-2">
                 
-                <p>Welcome to the tribute to a boxing legend, Mike Tyson. Nicknamed "Iron Mike" and known for his brute strength, aggressive style, and determination in the ring, Tyson rose from a tumultuous past to become one of the most recognized names in world boxing. Born on June 30, 1966, in Brooklyn, New York, Mike Tyson quickly stood out in the boxing world for his power and speed, becoming the youngest heavyweight world champion in history at the age of 20.</p>
-                <button>Read More</button>
+                <p>Bienvenidos al homenaje de una leyenda del boxeo, Mike Tyson. Apodado "Iron Mike" y conocido por su fuerza bruta, estilo agresivo y determinación en el ring, Tyson superó un pasado tumultuoso para convertirse en uno de los nombres más reconocidos en el boxeo mundial. Nacido el 30 de junio de 1966 en Brooklyn, Nueva York, Mike Tyson se destacó rápidamente en el mundo del boxeo por su poder y velocidad, convirtiéndose en el campeón mundial de peso pesado más joven de la historia a los 20 años.</p>
+                <button id="readmore" onclick="showMore()">Read More</button>
+                <div id="moreText" style="display:none;">A pesar de enfrentar desafíos tanto dentro como fuera del ring, Tyson mantuvo una presencia imponente en el boxeo. Sus peleas generaban expectación mundial, y su estilo feroz, junto con una serie de nocauts espectaculares, solidificó su fama. No solo influyó en la categoría de los pesos pesados, sino que también dejó una huella indeleble en la cultura popular, con apariciones en películas y programas de televisión, convirtiéndose en un ícono reconocible más allá del deporte.
+                </div>
                 
             </div>
             <div class="col-2">
-                <img src="./img/blac33.jpg" alt="Imagen de diferentes episodios" id="introimg" >
+                <img src="./img/miketyson.jpg" alt="Imagen de diferentes episodios" id="introimg" >
             </div>
 
         </div>

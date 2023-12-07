@@ -6,4 +6,12 @@ function toggleNavbar() {
       x.className = "topnav";
     }
   }
+  function showMore() {
+    var moreText = document.getElementById("moreText");
+    if (moreText.style.display === "none") {
+      moreText.style.display = "block";
+    } else {
+      moreText.style.display = "none";
+    }
+  }
   
