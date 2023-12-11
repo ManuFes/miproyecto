@@ -69,7 +69,7 @@ nav{
     
     /* Change the color of links on hover */
     .topnav a:hover {
-      background-color: #ddd;
+      background-color: red;
     }
     
     /* Add an active class to highlight the current page */
