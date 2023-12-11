@@ -198,6 +198,37 @@ nav{
       width: 100%; /* 1 columna mobile first*/
       display: block;
       margin: auto;
+      border: red 2px solid;
+      border-radius: 10%;
+}
+
+.card {
+    perspective: 1000px;
+    width: 200px; /* Ajusta el tamaño de la tarjeta según tus necesidades */
+    height: 300px; /* Ajusta el tamaño de la tarjeta según tus necesidades */
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
 }
 
 
@@ -210,25 +241,26 @@ nav{
 
 /*** estilo de la card dentro del grid 4 ***/
 .card{
-      border: 1px solid grey;
+      
       
       padding: 4%;
       border-radius: 5%;
-      background-color: rgb(217, 217, 217);
+      background-color: rgb(0, 0, 0);
       color: black;
       transition: 1s;
       opacity: 0.7;
 }
 
 .card:hover{
-      background-color: white;
-      box-shadow: #808080 3px 3px 3px;
+      background-color: black;
       opacity: 1;
       
 }
 
 .card img{
-      width: 100%;
+      width: 250px;
+      height: 300px;
+      border: solid 2px red;
       border-radius: 5%;
       transform: scale(1);
 }
@@ -256,7 +288,7 @@ nav{
       font-size: 1rem;
       margin-left: 30%;
       cursor: pointer;
-      box-shadow: #808080 3px 3px 3px;
+      
 
 }
 
@@ -312,7 +344,6 @@ article {
   padding: 1em;
   margin: 1em auto;
   border-radius: 15px;
-
 }
 article .divArticule{
       margin-top: 1rem;
@@ -322,9 +353,17 @@ article .textoArticule{
       width: 60%;
       overflow: auto;
 }
+article .TituloSection{
+      color: red;
+}
 article .mediaAticule{
       width: 40%;
-
+}
+article .buttonArticule{
+      display: none;
+      color: red;
+      background-color: black;
+      margin-top: 20px;
 }
 
 input[type="radio"] {
@@ -506,6 +545,12 @@ footer a p:hover{
 
       .divArticule{
             flex-direction: column;
+      }
+      article .buttonArticule{
+            display: block;
+      }
+      article .videoArticule{
+            display: none;
       }
     }
 
