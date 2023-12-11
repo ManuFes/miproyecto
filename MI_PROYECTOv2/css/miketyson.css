@@ -320,6 +320,7 @@ article .divArticule{
 }
 article .textoArticule{
       width: 60%;
+      overflow: auto;
 }
 article .mediaAticule{
       width: 40%;
