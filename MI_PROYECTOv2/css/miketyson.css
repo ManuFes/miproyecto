@@ -36,7 +36,7 @@ body {margin:0;padding:0;   /* para desactivar el espacio de
       background-image: url("../img/background_body.jpg");
       font-family: textonormal;}
 
-#wrapper {background-color:#f2f1f1;
+#wrapper {background-color:black;
           
           width:100%;        /*heho para movile first*/
           margin:auto;}     /* centrado automático */
@@ -119,13 +119,16 @@ nav{
 
 #hero {
       background-image: url("../img/miketyson.webp");
+      margin-bottom: 5rem;
+      background-color: black;
       height:95vh;    /* el 100% del alto de la ventana del navegador */ 
-                         background-size: cover;
-                         background-position:center;
-                         position:relative;  /**** contenedor relativo *****/
-                        }
+      background-size: cover;
+      background-position:center;
+      position:relative;  /**** contenedor relativo *****/
+}
 
 #hero button {background-color: black;
+              border: white solid 2px!important;
               color:red;
               font-weight: bold;
               padding:10px;
@@ -289,7 +292,7 @@ nav{
 
 #secciones {
   font-family: 'Open Sans', sans-serif;
-  background-color: #333;
+  background-color: black;
   color: #fff;
   text-align: center;
   padding: 3em 1em;
@@ -305,9 +308,22 @@ nav{
 }
 
 article {
-  border: 1px solid #fff;
+  border: 1px solid red;
   padding: 1em;
   margin: 1em auto;
+  border-radius: 15px;
+
+}
+article .divArticule{
+      margin-top: 1rem;
+      display: flex;
+}
+article .textoArticule{
+      width: 60%;
+}
+article .mediaAticule{
+      width: 40%;
+
 }
 
 input[type="radio"] {
@@ -486,4 +502,9 @@ footer a p:hover{
         display: block;
         text-align: left;
       }
+
+      .divArticule{
+            flex-direction: column;
+      }
     }
+
