@@ -128,7 +128,7 @@ nav{
 }
 
 #hero button {background-color: black;
-              border: white solid 2px!important;
+              border: red solid 2px!important;
               color:red;
               font-weight: bold;
               padding:10px;
