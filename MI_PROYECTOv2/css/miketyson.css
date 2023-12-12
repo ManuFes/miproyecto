@@ -26,6 +26,9 @@
 html {
       scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+      width: 0px;
+}
 
 /********** Estilo general ****************/
 
@@ -175,6 +178,7 @@ nav{
       background-color: black;
       background-position: center;
       background: position 6ch;;
+      margin-top: 20px;
 }
 
 #moreText {
@@ -185,6 +189,7 @@ nav{
 .col-2{
       padding: 4%;
       color: white;
+      margin-top: 20px;
 }
 
 #readmore{
@@ -353,13 +358,17 @@ article .divArticule{
 }
 article .textoArticule{
       width: 60%;
+      padding: 5px;
       overflow: auto;
+      border: rgba(255, 0, 0, 0.642) inset 6px;
+      
 }
 article .TituloSection{
       color: red;
 }
 article .mediaAticule{
       width: 40%;
+      padding: 10px;
 }
 article .buttonArticule{
       display: none;
@@ -450,7 +459,8 @@ footer a p:hover{
 } */
 
       footer {
-            background-color: black;
+            background: rgb(163,163,163);
+            background: linear-gradient(0deg, rgba(163,163,163,1) 0%, rgba(153,153,153,1) 0%, rgba(4,4,4,1) 100%);
             color: white;
             padding: 20px;
             display: grid;
@@ -466,10 +476,15 @@ footer a p:hover{
             margin-bottom: 10px;
           }
           
-          .social-icons a {
+          .social-icons a img {
             color: white;
             margin: 0 10px;
-            font-size: 20px;
+            width: 50px;
+            height: 50px;
+          }
+          #insta{
+            width: 57px;
+            height: 57px;
           }
       .col-4.nav-footer{
             display: flex;
