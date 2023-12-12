@@ -18,8 +18,7 @@ function toggleNavbar() {
     alert('+34 934827237');
 }
 
-function showGitHubUsername() {
+  function showGitHubUsername() {
     alert('ManuFes');
 }
 
-  
