@@ -378,6 +378,9 @@ input[type="radio"] {
   }
 }
 /**********************Galeria**********************/
+#titGaleria{
+      margin-bottom: 1rem;
+}
 #galeria {
       background-color: black;
       color: red;
