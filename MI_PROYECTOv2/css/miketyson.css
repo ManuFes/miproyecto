@@ -377,6 +377,33 @@ input[type="radio"] {
     max-height: 200px;
   }
 }
+/**********************Galeria**********************/
+#galeria {
+      background-color: black;
+      color: red;
+      padding: 50px;
+      margin-bottom: 1rem;
+    }
+    
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid red;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+    
 
 /*************FOOTER********************************/
 
